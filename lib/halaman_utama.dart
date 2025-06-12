@@ -1,9 +1,10 @@
+import 'package:absen_wajah/else/daftar_wajah.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:intl/date_symbol_data_local.dart';
 import 'dart:async';
-import 'package:absen_wajah/sign_in.dart';
-import 'package:absen_wajah/sign_out.dart';
+import 'package:absen_wajah/absen/sign_in.dart';
+import 'package:absen_wajah/absen/sign_out.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class HomePage extends StatefulWidget {
@@ -140,6 +141,25 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ],
               ),
+              
+              SizedBox(height: 20,),
+
+                GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => DaftarWajah()),
+                );
+              },
+              child: Text(
+                'Daftar Wajah',
+                style: TextStyle(
+                  color: const Color.fromARGB(255, 243, 68, 33),
+                  fontSize: 16,
+                  decoration: TextDecoration.underline,
+                ),
+              ),
+             ),
             ],
           ),
         ),
