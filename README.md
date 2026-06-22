@@ -6,4 +6,4 @@ Absensi menggunakan metode scan wajah dan implementasi penggunaan machine learni
 
 Projek ini masi dalam demo belum menggunakan database dan backend
 
-Projek PKL Periode Januari - Juni 2025
+Projek Internship Periode Januari - Juni 2025
